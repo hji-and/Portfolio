@@ -247,7 +247,12 @@ export default function App() {
               <SwiperSlide>
                 <div className="portfolio-item">
                   <div className="portfolio-image">
-                    <a href="https://web-neon-delta-69.vercel.app/">
+                    <a
+                      href="https://web-neon-delta-69.vercel.app/"
+                      target="_blank"
+                      className="project-link"
+                      rel="noopener noreferrer"
+                    >
                       <span className="arrow"></span>
                       <LuSquareArrowOutUpRight
                         style={{ fontSize: "20px" }}
