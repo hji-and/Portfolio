@@ -247,7 +247,7 @@ export default function App() {
               <SwiperSlide>
                 <div className="portfolio-item">
                   <div className="portfolio-image">
-                    <a href="">
+                    <a href="https://web-neon-delta-69.vercel.app/">
                       <span className="arrow"></span>
                       <LuSquareArrowOutUpRight
                         style={{ fontSize: "20px" }}
@@ -256,7 +256,7 @@ export default function App() {
                     </a>
                   </div>
                   <h3>프로젝트 3</h3>
-                  <p>React와 TypeScript를 사용한 반응형 웹</p>
+                  <p>React()와 TypeScript를 사용한 반응형 웹</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
