@@ -15,9 +15,7 @@ export default function App() {
   const aboutRef = useRef(null);
   const resumeRef = useRef(null);
   const portfolioRef = useRef(null);
-  // const contactRef = useRef(null);
-  // .current 프로퍼티로 전달된 인자(initialValue)로 초기화된 변경 가능한 ref 객체를 반환합니다.
-  //
+
   const scrollToSection = (index) => {
     const sections = [
       heroRef,
@@ -27,28 +25,22 @@ export default function App() {
       /*contactRef,*/
     ];
     sections[index]?.current?.scrollIntoView({
-      //scrollIntoView: 특정 요소에 따른 스크롤 자동 조정
-      behavior: "smooth", //behavior : 스크롤 애니메이션에 대한 정의
-      block: "start", //block : 수직 정렬
+      behavior: "smooth",
+      block: "start",
     });
   };
-  //sections 배열: 위에서 정의된 다섯 개의 ref 객체를 순서대로 담고 있습니다.
-  //index 매개변수: 이 배열의 순서(인덱스)를 받아 스크롤할 대상을 지정합니다.
-  //핵심 동작: 지정된 인덱스의 ref를 찾아 (sections[index]),
-  //실제 DOM 요소(?.current)의 상단이 화면 상단에 맞춰 부드럽게(behavior: 'smooth', block: 'start') 보이도록 스크롤합니다.
-  //
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll(".section");
       const scrollPosition = window.pageYOffset + window.innerHeight / 3;
-      //scrollPosition: 스크롤이 감지된 위치
-      //window.pageYOffset수직스크롤위치 + (윈도우 높이÷3)화면상단에서 1/3지점이 감지 기준
+
       sections.forEach((section, index) => {
-        const top = section.offsetTop; //현재 순회중인 섹션의 시작
+        const top = section.offsetTop;
         const bottom = top + section.offsetHeight;
-        //감지 위치(scrollPosition)가 현재 순회중인 섹션의 시작과 끝 사이에 있는 경우
+
         if (scrollPosition >= top && scrollPosition < bottom) {
-          setActiveSection(index); //조건이 참이면 해당섹션의 (index)값으로 activeSection상태를 업데이트
+          setActiveSection(index);
         }
       });
     };
@@ -56,22 +48,14 @@ export default function App() {
 
     return () => window.removeEventListener("scroll", handleScroll); //스크롤이벤트 소멸시켜 메모리누수방지
   }, []);
-  //컴포넌트 화면에 나타난 후, 사용자가 스크롤할 때마다 모든 .section요소를 검사하여
-  //화면 상단 1/3지점에 걸쳐있는 섹션이 무엇인지 확인하고,
-  // 그 섹션의 인덱스를 activeSection에 상태 저장해
-  //이 activeSection상태를 사용해 내비게이션 메뉴 스타일을 동적으로 변경할 수 있다.
+
   return (
     <div className="app">
       <nav className="navbar">
         <div className="nav-container">
           <h1 className="logo">Portfolio</h1>
           <ul className="nav-menu">
-            <li
-              className={activeSection === 0 ? "active" : ""} //화면이 0번째면 active줌
-              onClick={() => scrollToSection(0)}
-            >
-              Home
-            </li>
+            <li className={activeSection === 0 ? "active" : ""}>Home</li>
             <li
               className={activeSection === 1 ? "active" : ""}
               onClick={() => scrollToSection(1)}
@@ -90,12 +74,6 @@ export default function App() {
             >
               Portfolio
             </li>
-            {/* <li
-              className={activeSection === 4 ? "active" : ""}
-              onClick={() => scrollToSection(4)}
-            >
-              Contact
-            </li> */}
           </ul>
         </div>
       </nav>
@@ -203,10 +181,7 @@ export default function App() {
             >
               <SwiperSlide>
                 <div className="portfolio-item">
-                  <div
-                    className="portfolio-image"
-                    // onClick={()=>{window.open(url, '_blank')}}
-                  >
+                  <div className="portfolio-image">
                     <a
                       href={"https://html0925.dothome.co.kr/ "}
                       target="_blank"
@@ -261,7 +236,7 @@ export default function App() {
                     </a>
                   </div>
                   <h3>프로젝트 3</h3>
-                  <p>React()와 TypeScript를 사용한 반응형 웹</p>
+                  <p>React(Router)와 TypeScript를 사용한 반응형 웹</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
