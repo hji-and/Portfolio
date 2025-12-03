@@ -341,7 +341,7 @@ export default function App() {
                       />
                       Project 5
                     </h3>
-                    <p>Figma를 사용한 모바일 앱 템플릿</p>
+                    <p>Figma를 사용한 웹/앱 레이아웃</p>
                   </div>
                 </SwiperSlide>
 
