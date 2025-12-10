@@ -349,15 +349,33 @@ export default function App() {
                   <div className="portfolio-item soon">
                     <div
                       className="portfolio-image"
-                      style={{
-                        background:
-                          "linear-gradient(135deg, #eaf8fa 0%, #cededc 50%, #adcfc9 100%)",
-                      }}
+                      // style={{
+                      //   background:
+                      //     "linear-gradient(135deg, #eaf8fa 0%, #cededc 50%, #adcfc9 100%)",
+                      // }}
                     >
-                      Soon
+                      {/* Soon */}
+                      <a
+                        href="https://www.figma.com/design/hpmeQ3a6uJZsYRm3yUxyTC/FOOD-APP?node-id=0-1&t=r0k0eCTRBCq07fLA-1"
+                        target="_blank"
+                        className="project-link"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="/team.png"
+                          alt="프로젝트 6 미리보기 이미지"
+                          className="thumbnail"
+                        />
+                      </a>
                     </div>
-                    <h3>Team Project</h3>
-                    <p>React, API 연동한 반응형 웹</p>
+                    <h3>
+                      {" "}
+                      <LuSquareArrowOutUpRight
+                        style={{ fontSize: "20px", padding: "6px 5px 0 0" }}
+                      />
+                      Team Project
+                    </h3>
+                    <p>React, API를 사용한 팀프로젝트</p>
                   </div>
                 </SwiperSlide>
               </Swiper>
