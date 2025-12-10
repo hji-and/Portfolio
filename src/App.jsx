@@ -357,7 +357,7 @@ export default function App() {
                       Soon
                     </div>
                     <h3>Team Project</h3>
-                    <p>팀프로젝트(예정)</p>
+                    <p>React, API 연동한 반응형 웹</p>
                   </div>
                 </SwiperSlide>
               </Swiper>
