@@ -212,9 +212,17 @@ export default function App() {
                 navigation
                 pagination={{ clickable: true }}
                 slidesPerView={1}
+                ceterMode={true}
+                centerPadding={"10px"}
                 breakpoints={{
-                  640: {
+                  600: {
                     slidesPerView: 1,
+                    ceterMode: true,
+                    centerPadding: "10px",
+                  },
+                  990: {
+                    ceterMode: true,
+                    centerPadding: "10px",
                   },
                   1024: {
                     slidesPerView: 3,
