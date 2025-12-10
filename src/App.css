@@ -469,6 +469,7 @@ section {
     text-align: center;
     padding-top: 2rem; /* 상하 패딩은 유지 */
     padding-bottom: 2rem;
+    overflow: hidden;
   }
 
   /* 2. Swiper 컨테이너의 좌우 패딩을 제거하거나 0으로 설정 */
@@ -563,8 +564,18 @@ section {
   }
 
   /* 포트폴리오 컨테이너 좌우 패딩 추가 */
-  .section-container {
-    padding: 2rem 0.5rem 3rem; /* 좌우 패딩 0.5rem 추가 */
+
+  .section-portfolio .section-content {
+    max-width: 1200px;
+    /* 기존 padding 대신 마진으로 여백 확보 */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 2rem; /* 상하 패딩은 유지 */
+    padding-bottom: 2rem;
+    overflow: hidden;
   }
 }
 .btn-secondary {
