@@ -12,6 +12,13 @@
   color: #333;
   margin-top: 10px;
 }
+.me img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: 20rem;
+  display: block;
+}
 .mee {
   margin: 0 auto;
   padding-top: 2.8rem;
@@ -33,6 +40,9 @@
 }
 .me img {
   margin: 0 0 0 10rem;
+}
+.skill-icon {
+  margin-right: 0.3rem;
 }
 
 /* 네비 */
@@ -239,7 +249,7 @@ section {
   transform: translateY(-3px);
 }
 .card-fade {
-  animation: fadeIn 1s ease-in-out 1.5s both;
+  animation: fadeIn 1s ease-in-out 1s both;
 }
 
 /* Portfolio SwiperSlider */
@@ -388,8 +398,9 @@ section {
   width: 30px;
   border-radius: 6px;
 }
+
 /* Responsive 반응형 */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .section-content h2 {
     font-size: 2rem;
   }
@@ -411,6 +422,17 @@ section {
   }
   .cards {
     grid-template-columns: 1fr; /* 가로로 나열 */
+  }
+  /* About 섹션 이미지 위치 조정 (기존 코드 유지) */
+  .me img {
+    margin: 0 auto; /* 중앙 정렬 */
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* .mee의 상단 패딩 조정 */
+  .mee {
+    padding-top: 1rem; /* 태블릿에서는 조금만 남겨둠 */
   }
 }
 /* resume button */
@@ -442,10 +464,10 @@ section {
   transition: all 0.3s;
 }
 
-.btn-secondary:hover {
+/* .btn-secondary:hover {
   border-color: #a855f7;
   color: #a855f7;
-}
+} */
 @media (max-width: 480px) {
   /* 전체 섹션 패딩 조정 */
   section {
@@ -467,13 +489,28 @@ section {
   .section-content h2 {
     font-size: 1.8rem;
   }
-
-  /* .mee (About 섹션 컨테이너)의 상단 패딩 조정 */
-  .mee {
-    padding-top: 1.5rem;
+  /* (About 섹션 컨테이너) */
+  .me {
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  .about-img {
+    width: 80%;
+    max-width: 12rem;
+    height: auto;
   }
 
-  /* 영웅 섹션 버튼 간격 조정 */
+  .mee {
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .me li .skill-icon {
+    font-size: 18px;
+    margin: 5px 8px;
+  }
+
+  /* 히어로 섹션 버튼 간격 조정 */
   .hero-buttons {
     gap: 0.75rem;
     margin-bottom: 2rem;

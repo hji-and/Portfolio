@@ -126,7 +126,8 @@ export default function App() {
                 <img
                   src="./me.png"
                   alt="me"
-                  style={{ width: "20rem", padding: "0" }}
+                  // style={{ width: "20rem", padding: "0" }}
+                  className="about-img"
                 />
               </div>
               <div className="mee">
@@ -154,10 +155,22 @@ export default function App() {
                 </li>
                 <ul>Skills</ul>
                 <li>
-                  <FaHtml5 style={{ fontSize: "15px", margin: "5px 0 5px" }} />
-                  <FaCss3Alt style={{ fontSize: "15px", margin: "5px 5px" }} />
-                  <FaJs style={{ fontSize: "15px", margin: "5px 5px" }} />
-                  <FaReact style={{ fontSize: "15px", margin: "5px 5px" }} />
+                  <FaHtml5
+                    className="skill-icon"
+                    // style={{ fontSize: "15px", margin: "5px 0 5px" }}
+                  />
+                  <FaCss3Alt
+                    className="skill-icon"
+                    // style={{ fontSize: "15px", margin: "5px 5px" }}
+                  />
+                  <FaJs
+                    className="skill-icon"
+                    // style={{ fontSize: "15px", margin: "5px 5px" }}
+                  />
+                  <FaReact
+                    className="skill-icon"
+                    // style={{ fontSize: "15px", margin: "5px 5px" }}
+                  />
                 </li>
               </div>
             </div>
