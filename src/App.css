@@ -398,6 +398,9 @@ section {
   width: 30px;
   border-radius: 6px;
 }
+.section-portfolio .section-content {
+  overflow: hidden;
+}
 
 /* Responsive 반응형 */
 @media (max-width: 990px) {
