@@ -109,7 +109,7 @@ export default function App() {
             <h2 className="typing blink-caret">{displayText}</h2>
             {/* <p className="fade-in-delay"> */}
             <p
-              className="fade-in-delay "
+              className="fade-in-delay txt-intro"
               // style={{ whiteSpace: "pre-line" }}
             >
               안녕하세요, 프로그래머를 지망하는 권혜지입니다. <br />
@@ -122,7 +122,7 @@ export default function App() {
           <div className="section-content">
             <h2 className="slide-in-left">About</h2>
             <div className="me slide-in-left">
-              <div>
+              <div className="about-div">
                 <img
                   src="./me.png"
                   alt="me"
@@ -369,7 +369,7 @@ export default function App() {
                     >
                       {/* Soon */}
                       <a
-                        href="https://www.figma.com/design/hpmeQ3a6uJZsYRm3yUxyTC/FOOD-APP?node-id=0-1&t=r0k0eCTRBCq07fLA-1"
+                        href="https://todo-team.vercel.app/"
                         target="_blank"
                         className="project-link"
                         rel="noopener noreferrer"
