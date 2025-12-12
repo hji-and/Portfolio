@@ -377,7 +377,7 @@ export default function App() {
                     >
                       {/* Soon */}
                       <a
-                        href="https://todo-team2.vercel.app/"
+                        href="https://todo-team-project-eosin.vercel.app/toeat"
                         target="_blank"
                         className="project-link"
                         rel="noopener noreferrer"
