@@ -189,13 +189,13 @@ export default function App() {
           <div className="cards">
             <div
               className="card card-fade"
-              onClick={() => window.open("./ResumeKo.pdf", "_blank")}
+              onClick={() => window.open("./pdf-ko.pdf", "_blank")}
             >
               한국어
             </div>
             <div
               className="card card-fade"
-              onClick={() => window.open("./ResumeJa.pdf", "_blank")}
+              onClick={() => window.open("./pdf-ja.pdf", "_blank")}
             >
               日本語
             </div>
